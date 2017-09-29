@@ -40,8 +40,17 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
 
+    'django.contrib.admindocs',
+    'rest_framework',
+    'corsheaders',
+    'oauth2_provider',
+
     'oauth2_backend',
     'backend_utils',
+    #'oauth2_backend_api',
+
+
+
 ]
 
 MIDDLEWARE = [
@@ -60,7 +69,7 @@ ROOT_URLCONF = 'upeuauth_main.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -87,13 +96,24 @@ DATABASESx = {
     }
 }
 
-DATABASES = {
+DATABASESlocal = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'upeu',
         'USER': 'postgres',
         'PASSWORD': '12345',
         'HOST': '127.0.0.1',
+        'PORT': '5432',
+    }
+}
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dfan09m442ulle',
+        'USER': 'dqbaswlpmlqopt',
+        'PASSWORD': 'd3065588ac75a6e87a9e3e915c60d2d711dfca3bb9d708f330aaec7861fa1d81',
+        'HOST': 'ec2-54-235-88-58.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
@@ -150,4 +170,44 @@ STATICFILES_DIRS = [
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
+# adding
 AUTH_USER_MODEL = 'oauth2_backend.User'
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'oauth2_provider.contrib.rest_framework.OAuth2Authentication',
+    ),
+    'DEFAULT_PERMISSION_CLASSESx': (
+        'rest_framework.permissions.IsAuthenticated',
+    )
+}
+
+AUTHENTICATION_BACKENDS = (
+    'oauth2_provider.backends.OAuth2Backend',
+    # Uncomment following if you want to access the admin
+    'django.contrib.auth.backends.ModelBackend',
+
+)
+
+CORS_ORIGIN_ALLOW_ALL = True  # False
+CORS_ALLOW_CREDENTIALS = True
+CORS_ORIGIN_WHITELIST = ('127.0.0.1:9001', '127.0.0.1:9003',
+                         'localhost:9003', 'localhost:8003')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+OAUTH2_PROVIDER = {
+    # this is the list of available scopes
+    'SCOPES': {
+        'read': 'Read scope',
+        'write': 'Write scope',
+        'openid': 'Access to your openid connect',
+        'home': 'Access to your home page',
+        'backend': 'Access to your backend app',
+        'catalogo': 'Access to your catalogo app',
+        'ubigeo': 'Access to your ubigeo app',
+        'admision': 'Access to your admision app'
+    }
+}

@@ -1,6 +1,11 @@
 dj-database-url==0.4.1
 Django==1.11.5
+django-cors-headers==2.1.0
+django-oauth-toolkit==1.0.0
+djangorestframework==3.6.4
+docutils==0.14
 gunicorn==19.6.0
+oauthlib==2.0.4
+Pillow==4.2.1
 psycopg2==2.6.2
 whitenoise==3.2
-Pillow
