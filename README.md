@@ -28,7 +28,7 @@ upeauauth-serve es el microservicio para el **Authorization server** escrita en 
 
 ## Installation en modo local (Opcional)
 
-###Requirements
+### Requirements
 
 * Python 3.4, 3.5, latest
 * Django 1.11.x
@@ -178,5 +178,5 @@ See https://github.com/practian-ioteca-project/upeuauth-serve/graphs/contributor
 [Django](https://www.djangoproject.com)
 [Django REST Framework](http://www.django-rest-framework.org)
 [Django OAuth Toolkit](https://django-oauth-toolkit.readthedocs.io)
-[oauth2_backend](https://github.com/practian-reapps/django-oauth2-backend)
+[oauth2_backend]: https://github.com/practian-reapps/django-oauth2-backend
 
