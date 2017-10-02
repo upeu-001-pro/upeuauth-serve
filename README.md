@@ -2,7 +2,6 @@
 
 upeauauth-serve es el microservicio para el **Authorization server** escrita en  `Django`_ 1.11.x, `Django REST Framework`_ 3.6.x y `Django OAuth Toolkit`_ 1.0.x (OAuth2). Y utiliza la app [oauth2_backend].
 
-[oauth2_backend]: https://github.com/practian-reapps/django-oauth2-backend "oauth2_backend"
 
 ![Image of Yaktocat](https://github.com/upeu-001-pro/upeuauth-serve/blob/master/media/doc/e1-authorization_server.png)
 
@@ -168,15 +167,14 @@ See also, a [ready-made application](https://github.com/heroku/python-getting-st
 - [dj-database-url](https://warehouse.python.org/project/dj-database-url/)
 
 
--------
-Contributors
--------
+
+### Contributors
+
 
 See https://github.com/practian-ioteca-project/upeuauth-serve/graphs/contributors
 
-[github](https://github.com/upeu-001-pro/upeuauth-serve)
-[Django](https://www.djangoproject.com)
-[Django REST Framework](http://www.django-rest-framework.org)
-[Django OAuth Toolkit](https://django-oauth-toolkit.readthedocs.io)
-
-
+[github]: https://github.com/upeu-001-pro/upeuauth-serve
+[Django]: https://www.djangoproject.com
+[Django REST Framework]: http://www.django-rest-framework.org
+[Django OAuth Toolkit]: https://django-oauth-toolkit.readthedocs.io
+[oauth2_backend]: https://github.com/practian-reapps/django-oauth2-backend "oauth2_backend"
