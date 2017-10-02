@@ -3,7 +3,7 @@
 upeauauth-serve es el microservicio para el **Authorization server** escrita en  `Django`_ 1.11.x, `Django REST Framework`_ 3.6.x y `Django OAuth Toolkit`_ 1.0.x (OAuth2). Y utiliza la app [oauth2_backend].
 
 
-![Image of Yaktocat](https://github.com/upeu-001-pro/upeuauth-serve/blob/master/media/doc/e1-authorization_server.png)
+![Image of Yaktocat](https://github.com/upeu-001-pro/upeuauth-serve/blob/master/media/doc/e1-authorization_serve.png)
 
 
 
