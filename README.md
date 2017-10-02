@@ -8,9 +8,7 @@ upeauauth-serve es el microservicio para el **Authorization server** escrita en 
 
 
 
-
-
-## Demo [oauth2_backend]
+## Demo 
 
 [Ir Admin](https://upeuauth-serve.herokuapp.com/admin)
 
