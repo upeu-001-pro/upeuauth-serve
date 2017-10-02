@@ -1,25 +1,17 @@
 # UPeU Auth Serve
 
-    upeauauth-serve es el microservicio para el **Authorization server** escrita en  `Django`_ 1.11.x, `Django REST Framework`_ 3.6.x y `Django OAuth Toolkit`_ 1.0.x (OAuth2). Y utiliza la app [oauth2_backend].
+upeauauth-serve es el microservicio para el **Authorization server** escrita en  `Django`_ 1.11.x, `Django REST Framework`_ 3.6.x y `Django OAuth Toolkit`_ 1.0.x (OAuth2). Y utiliza la app [oauth2_backend].
 
 
 
-    ![Image of Yaktocat](https://github.com/practian-ioteca-project/upeuauth-serve/blob/master/media/doc/e1-authorization_server.png)
+![Image of Yaktocat](https://github.com/practian-ioteca-project/upeuauth-serve/blob/master/media/doc/e1-authorization_server.png)
 
 
 
 
 
 
-.. contents::
-
-.. section-numbering::
-
-.. raw:: pdf
-
-   PageBreak oneColumn
-
-##Demo
+## Demo
 
 [Ir Admin](https://upeuauth-serve.herokuapp.com/admin)
 
@@ -28,12 +20,13 @@
 	# PASSWORD : 12345
 ```
 
-##Usage
+## Usage
+
 [Example](https://github.com/upeu-001-pro/catalogo-serve)
 
 
 
-##Installation en modo local (Opcional)
+## Installation en modo local (Opcional)
 
 ###Requirements
 
@@ -41,7 +34,7 @@
 * Django 1.11.x
 
 
-###Development version
+### Development version
 
 
 Clone **latest development version** directly from [github]:
@@ -82,7 +75,7 @@ Run the app in 7001 port::
 
 
 
-##Revise las configuraciones
+## Revise las configuraciones
 
 
 1. INSTALLED_APPS setting like this:
