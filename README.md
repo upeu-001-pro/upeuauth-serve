@@ -4,7 +4,7 @@ upeauauth-serve es el microservicio para el **Authorization server** escrita en 
 
 
 
-![Image of Yaktocat](https://github.com/practian-ioteca-project/upeuauth-serve/blob/master/media/doc/e1-authorization_server.png)
+![Image of Yaktocat](https://github.com/upeu-001-pro/upeuauth-serve/blob/master/media/doc/e1-authorization_server.png)
 
 
 
