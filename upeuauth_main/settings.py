@@ -97,7 +97,7 @@ DATABASESx = {
     }
 }
 
-DATABASESlocal = {
+DATABASESxx = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'upeu',
